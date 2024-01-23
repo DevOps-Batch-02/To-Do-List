@@ -1,79 +1,64 @@
-body { 
-	display: flex; 
-	align-items: center; 
-	justify-content: center; 
-	font-family: sans-serif; 
-	line-height: 1.5; 
-	min-height: 100vh; 
-	background: #f3f3f3; 
-	flex-direction: column; 
-	margin: 0; 
-} 
+body{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(121,32,153,1) 86%);
+    background-attachment: fixed;
+    margin:0;
+    font-family: 'Poppins', sans-serif; 
+}
 
-.main { 
-	background-color: hsl(0, 0%, 100%); 
-	border-radius: 15px; 
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
-	padding: 10px 20px; 
-	transition: transform 0.2s; 
-	width: 500px; 
-	text-align: center; 
-} 
+#form{
+    width:400px;
+    margin:20vh auto 0 auto;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding:30px;
+}
 
-h1 { 
-	color: #4CAF50; 
-} 
+h1{
+    text-align: center;
+    color:#792099;
+}
 
-label { 
-	display: block; 
-	width: 100%; 
-	margin-top: 10px; 
-	margin-bottom: 5px; 
-	text-align: left; 
-	color: #555; 
-	font-weight: bold; 
-} 
+#form button{
+    background-color: #792099;
+    color:white;
+    border: 1px solid #792099;
+    border-radius: 5px;
+    padding:10px;
+    margin:20px 0px;
+    cursor:pointer;
+    font-size:20px;
+    width:100%;
+}
 
-#pass { 
-	color: red; 
-	font-size: 12px; 
-} 
+.input-group{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
 
-input { 
-	display: block; 
-	width: 100%; 
-	margin-bottom: 15px; 
-	padding: 10px; 
-	box-sizing: border-box; 
-	border: 1px solid #ddd; 
-	border-radius: 5px; 
-} 
+.input-group input{
+    border-radius: 5px;
+    font-size:20px;
+    margin-top:5px;
+    padding:10px;
+    border:1px solid rgb(34,193,195) ;
+}
 
-select { 
-	display: block; 
-	width: 100%; 
-	margin-bottom: 15px; 
-	padding: 10px; 
-	box-sizing: border-box; 
-	border: 1px solid #ddd; 
-	border-radius: 5px; 
-} 
+.input-group input:focus{
+    outline:0;
+}
 
-button { 
-	padding: 15px; 
-	border-radius: 10px; 
-	margin-top: 15px; 
-	margin-bottom: 15px; 
-	border: none; 
-	color: white; 
-	cursor: pointer; 
-	background-color: #4CAF50; 
-	width: 100%; 
-	font-size: 16px; 
-} 
+.input-group .error{
+    color:rgb(242, 18, 18);
+    font-size:16px;
+    margin-top: 5px;
+}
 
-.wrap { 
-	display: flex; 
-	justify-content: center; 
-	align-items: center; 
+.input-group.success input{
+    border-color: #0cc477;
+}
+
+.input-group.error input{
+    border-color:rgb(206, 67, 67);
 }
