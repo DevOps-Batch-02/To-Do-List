@@ -2,14 +2,14 @@
 <html> 
   
 <head> 
-    <title>Registration Form</title> 
+    <title>Register form</title> 
     <link rel="stylesheet" 
-          href="style.css"> 
+          href="regstyles.css"> 
 </head> 
   
 <body> 
     <div class="main"> 
-        <h1>GeeksforGeeks</h1> 
+        <h1>REGISTER FOR TODOIST</h1> 
         <form action=""> 
             <label for="first">First Name:</label> 
             <input type="text" id="first" 
@@ -25,12 +25,7 @@
             <input type="email" id="email" 
                    name="email" 
                    placeholder="Enter your email" required> 
-  
-            <label for="dob">Date of Birth:</label> 
-            <input type="date" 
-                   id="dob" name="dob" 
-                   placeholder="Enter your DOB" required> 
-  
+            
             <label for="password">Password:</label> 
             <input type="password" id="password" 
                    name="password"
@@ -41,7 +36,7 @@
                        one alphabet, one symbol, and be at  
                        least 8 characters long"> 
   
-            <label for="repassword">Re-type Password:</label> 
+            <label for="repassword">Confirm Password:</label> 
             <input type="password" id="repassword" 
                    name="repassword" 
                    placeholder="Re-Enter your password" required> 
@@ -52,14 +47,7 @@
                    name="mobile" 
                    placeholder="Enter your Mobile Number" required 
                    maxlength="10"> 
-  
-            <label for="gender">Gender:</label> 
-            <select id="gender" name="gender" required> 
-                <option value="male">Male</option> 
-                <option value="female">Female</option> 
-                <option value="other">Other</option> 
-            </select> 
-  
+   
             <div class="wrap"> 
                 <button type="submit" onclick="solve()"> 
                   Submit 
@@ -67,7 +55,7 @@
             </div> 
         </form> 
     </div> 
-    <script src="script.js"></script> 
+    <script src="regscript.js"></script> 
 </body> 
   
 </html>
