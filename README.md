@@ -1,7 +1,6 @@
 # To-Do List Tracker #
 
-## Abstract ##
-          The To-Do List Tracker app is a streamlined and user-friendly solution designed to enhance your daily productivity. 
+Abstract:The To-Do List Tracker app is a streamlined and user-friendly solution designed to enhance your daily productivity. 
 With an intuitive interface and smart task organization, it simplifies the management of your tasks, allowing for 
 easy prioritization and categorization. The app supports collaboration, enabling real-time sharing of tasks and projects 
 for efficient teamwork. Customizable workflows cater to individual preferences, while time tracking and analytics provide 
