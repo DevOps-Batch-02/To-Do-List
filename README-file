@@ -1,20 +1,29 @@
-# Authentication Service #
-Project Code: G0001
+####To-Do List tracker####
 
-Authentication Service is part of Tick Tick app. It is built around [AWS Cognito](https://aws.amazon.com/cognito/) User Pools and Identify Pools.
+Abstract:The To-Do List Tracker app is a streamlined and user-friendly solution designed to enhance your daily productivity. 
+With an intuitive interface and smart task organization, it simplifies the management of your tasks, allowing for 
+easy prioritization and categorization. The app supports collaboration, enabling real-time sharing of tasks and projects 
+for efficient teamwork. Customizable workflows cater to individual preferences, while time tracking and analytics provide 
+insights into your productivity patterns. Accessible across various platforms and prioritizing security, this app ensures 
+a seamless and secure task management experience, empowering users to stay organized and focused on their goals.
 
-## Use Cases ##
+####Authentication Service####
+Project Code: T0001
 
-### Use Case Diagram ###
+Authentication Service is part of To-Do List Tracker app. It is built around [AWS Cognito](https://aws.amazon.com/cognito/) User Pools and Identify Pools.
+
+### Use Cases ###
+
+## Use Case Diagram ##
 
 
 ## User Stories ##
-### G0001-001: Register ###
+### T0001-001: Register ###
 
-* Actor: User without Glarimy ID
+* Actor: User without Todoist ID
 * Pre Condition:
 
-1. User should have a working email-id which is not already registered with Glarimy Cloud.
+1. User should have a working email-id which is not already registered with Todoist.
 
 * Input:
 
@@ -38,29 +47,29 @@ Authentication Service is part of Tick Tick app. It is built around [AWS Cognito
 * Exceptions:
 
 1. Registration page re-appears with appropriate message if user enters invalid name or invalid email-ID or invalid password.
-2. Registration page re-appears with appropriate message if the email-ID is already registered with Glarimy Cloud.
+2. Registration page re-appears with appropriate message if the email-ID is already registered with Todoist.
 3. Registration page shows "resend" button, in case the activation code is not entered in the first 5 minutes after the mail has been sent.
 4. Registration page will not show any special message if the email-ID is not reachable. It just prompts for activation code, as usual.
 
-### G0001-002: Login with Inactive Glarimy-ID ###
+### T0001-002: Login with Inactive Todoist ID ###
 
-* Actor: User with Inactive Glarimy-ID
+* Actor: User with Inactive Todoist ID
 
 * Pre Condition:
 
-1. User should have a registered Glarimy ID and password with Glarimy Cloud.
+1. User should have a registered Todoist ID and password with Todoist Tracker.
 
 * Input:
 
-1. Glarimy ID
+1. Todoist ID
 2. Password
 
 * Sequence:
 
 1. User opens the webpage and click on ‘Login’
 2. Login page appears
-3. User supplies Glarimy ID and password
-4. Page indicates that the Glarimy ID is yet to be activated.
+3. User supplies todoist ID and password
+4. Page indicates that the Todoist ID is yet to be activated.
 4. Page displays a message to check email and prompt for activation code
 5. User enters the activation code
 6. Page displays success message and redirects to login page
@@ -71,27 +80,27 @@ Authentication Service is part of Tick Tick app. It is built around [AWS Cognito
 
 * Exceptions:
 
-1. Login page re-appears with appropriate message if user enters invalid Glarimy ID or password.
+1. Login page re-appears with appropriate message if user enters invalid Todoist ID or password.
 2. Prompt box re-appears with appropriate message if user enters invalid Activation Code.
 3. Login page re-appears with appropriate message if user fails to enter valid Activation Code within 5 minutes.
 
-### G0001-003: Login with Active Glarimy ID ###
+### T0001-003: Login with Active Todoist ID ###
 
-* Actor: User with Active Glarimy ID 
+* Actor: User with Active Todoist ID 
 
 * Pre Condition:
 
-1. User should have activated the Glarimy ID
+1. User should have activated the Todoist ID
 
 * Input:
 
-1. Glarimy ID. 
+1. Todoist ID. 
 2. Password.
 
 * Sequence:
  
 1. User opens login web page
-2. User supplies his/her Glarimy ID and Password
+2. User supplies his/her Todoist ID and Password
 3. User click on login button
 4. User home page appears
 
@@ -101,25 +110,25 @@ Authentication Service is part of Tick Tick app. It is built around [AWS Cognito
 
 * Exceptions:
 
-1. Login page re-appears with appropriate message if user enters invalid Glarimy ID or password.
+1. Login page re-appears with appropriate message if user enters invalid Todoist ID or password.
 
-### G0001-004 Reset Password ###
+### T0001-004 Reset Password ###
 
-* Actor: User with Active Glarimy ID 
+* Actor: User with Active Todoist ID 
  
 * Pre Condition:
 
-1. User should have an active Glarimy ID with Glarimy Cloud.
+1. User should have an active Todoist ID with Todoist.
 
 * Input:
 
-1. Glarimy ID
+1. Todoist ID
 
 * Sequence:
 
 1. User opens login page.
 2. User clicks on forgot password button.
-3. User enters Glarimy ID
+3. User enters Todoist ID
 4. Page prompts for new password and clicks on "Reset Password"
 4. Page displays a message to check email and prompt for activation code
 5. User enters the activation code
@@ -131,16 +140,16 @@ Authentication Service is part of Tick Tick app. It is built around [AWS Cognito
 
 * Exceptions:
 
-1. Login page re-appears with appropriate message if user enters invalid Glarimy-ID.
+1. Login page re-appears with appropriate message if user enters invalid Todoist ID.
 2. Prompt box re-appears with appropriate message if user enters invalid activation code.
 
-### G0001-005 Change Profile  ###
+### T0001-005 Change Profile  ###
 
-* Actor: User with Active Glarimy ID
+* Actor: User with Active Todoist ID
 
 * Pre Condition:
 
-1. User should have logged into Glarim Cloud
+1. User should have logged into Todoist Tracker
 
 * Input:
 
@@ -173,13 +182,13 @@ Authentication Service is part of Tick Tick app. It is built around [AWS Cognito
 3. Displays error message in case name is invalid
 4. Displays error message in case invalid size/format for the profile pic
 
-### G0001-006 Logout ###
+### T0001-006 Logout ###
 
-* Actor: User with Active Glarimy ID
+* Actor: User with Active Todoist ID
 
 * Pre Condition:
 
-1. User should have logged in to Glarimy Cloud.
+1. User should have logged in to Todoist tracker.
 
 * Input:
 
@@ -199,13 +208,13 @@ Authentication Service is part of Tick Tick app. It is built around [AWS Cognito
 
 1. Not Applicable
 
-### G0001-007 De-activate Glarimy-ID ###
+### T0001-007 De-activate Todoist ID ###
 
-* Actor: User with Active Glarimy ID
+* Actor: User with Active Todoist ID
 
 * Pre Condition:
 
-1. User should be logged in with Active Glarimy ID.
+1. User should be logged in with Active Todoist ID.
 
 * Input:
 
@@ -220,7 +229,7 @@ Authentication Service is part of Tick Tick app. It is built around [AWS Cognito
 
 * Post Condition:
 
-1. User should not be able to login to Glarimy Cloud with activating the ID again.
+1. User should not be able to login to Todoist with activating the ID again.
 2. Back button or bookmarks fail to open any of the login-protected pages of the web app
 
 * Exceptions:
