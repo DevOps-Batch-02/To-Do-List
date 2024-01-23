@@ -1,4 +1,4 @@
-####To-Do List tracker####
+#To-Do List tracker#
 
 Abstract:The To-Do List Tracker app is a streamlined and user-friendly solution designed to enhance your daily productivity. 
 With an intuitive interface and smart task organization, it simplifies the management of your tasks, allowing for 
@@ -7,14 +7,14 @@ for efficient teamwork. Customizable workflows cater to individual preferences, 
 insights into your productivity patterns. Accessible across various platforms and prioritizing security, this app ensures 
 a seamless and secure task management experience, empowering users to stay organized and focused on their goals.
 
-####Authentication Service####
+#Authentication Service#
 Project Code: T0001
 
 Authentication Service is part of To-Do List Tracker app. It is built around [AWS Cognito](https://aws.amazon.com/cognito/) User Pools and Identify Pools.
 
-### Use Cases ###
+## Use Cases ##
 
-## Use Case Diagram ##
+### Use Case Diagram ###
 
 
 ## User Stories ##
