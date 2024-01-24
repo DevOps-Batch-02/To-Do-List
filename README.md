@@ -34,7 +34,7 @@ Authentication Service is part of To-Do List Tracker app. It is built around [AW
 * Sequence:
 
 1. User opens the webpage and click on 'Register'.
-2. Registration page will appears.
+2. Registration page  appears.
 3. User supplies the name, a working email-id and the preferred password.
 4. Page displays a message to check e-mail and prompts for activation code.
 5. User enters the activation code.
