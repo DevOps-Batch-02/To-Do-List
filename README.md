@@ -149,7 +149,7 @@ Authentication Service is part of To-Do List Tracker app. It is built around [AW
 
 * Pre Condition:
 
-1. User should have logged into Todoist Tracker
+1. User should have logged into Todoist Tracker page
 
 * Input:
 
